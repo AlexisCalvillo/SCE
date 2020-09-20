@@ -141,24 +141,33 @@ public class ClsConexion
            rsmd = rs.getMetaData();
            campos=obtenMapaCampos(rs);
            nCol = campos.size();
-           strRes="CREATE TABLE " +strTv + "(\n ";
+           strRes="DROP TABLE "+ strTv + ";\n";
+           strRes+="CREATE TABLE " +strTv + "(\n ";
            for(ClsCampoBD campo:campos.values())
                strRes+= campo.nombre + " " + campo.codificaTipo(campo.tipo)+ ",\n";
-           strRes=strRes.substring(0,strRes.length()-2)+ "),\n";
+           strRes=strRes.substring(0,strRes.length()-2)+ ");\n";
                //strRes += rsmd.getColumnName(i) + " de tipo " + rsmd.getColumnTypeName(i)+"\n";
                
-           strRes += '\n';
-           strRes+= "INSERT INTO " + strTv + "VALUES\n";
+           
            n = 0;
+           strRes += '\n';
+           if(rs.next()){
+                   strRes+= "INSERT INTO " + strTv + " VALUES\n";
+                   n++;
+                   strRes += "(";
+                   for( ClsCampoBD campo:campos.values() )
+                       strRes += campo.codificaDato(rs.getString(campo.nombre)) + ",";
+                   strRes=strRes.substring(0,strRes.length()-1)+ "),\n";
+           }
            while( rs.next() )
            {
                n++;
                strRes += "(";
                for( ClsCampoBD campo:campos.values() )
-                  strRes += campo.codificaDato(rs.getString(campo.nombre)) + ",";
-               strRes=strRes.substring(0,strRes.length()-1)+ ");\n";
+                   strRes += campo.codificaDato(rs.getString(campo.nombre)) + ",";
+               strRes=strRes.substring(0,strRes.length()-1)+ "),\n";
            }
-           strRes=strRes.substring(0,strRes.length()-2)+";";
+           strRes=strRes.substring(0,strRes.length()-2)+";\n\n";
        }
        catch(Exception e )
        {

@@ -19,6 +19,8 @@ public class PoblarBD_DB {
      */
     public static void main(String[] args) {
         ResultSet r = null;
+        String resultadoTot="CONNECT 'jdbc:derby://localhost:1527/EscDeBaile;user=rafa;password=rafa';\n";
+        
         java.util.TreeMap<String,ClsCampoBD> colCampos = null;
         String[] strTb;
         if(args.length!=0)
@@ -36,7 +38,7 @@ public class PoblarBD_DB {
                    r = c.obtenRS(strTb[i]);
                    colCampos = c.obtenMapaCampos(r);
                    r = c.obtenRS(strTb[i],colCampos );
-                   System.out.println(c.obtenCadenaInsertRs(strTb[i], r));
+                   resultadoTot+=c.obtenCadenaInsertRs(strTb[i], r);
                }
            }
            c.cierraCon();
@@ -45,6 +47,8 @@ public class PoblarBD_DB {
         {
             e.printStackTrace();
         }
+        resultadoTot+="\n show tables; \n exit;";
+        System.out.println(resultadoTot);
     }
     
 }
