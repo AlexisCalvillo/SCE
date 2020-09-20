@@ -437,7 +437,7 @@ public class ClsConexion
         ResultSet r = null;
         java.util.TreeMap<String,ClsCampoBD> colCampos = null;
         
-        String strLocBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\PrimerParcial\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
+        String strLocBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\PrimerParcial\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
                
         try
         {
