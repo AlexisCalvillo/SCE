@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://192.168.0.12:8080/EscBaileWeb/NewWebService?WSDL</wsimport-option-value>
+          <wsimport-option-value>http://localhost:8080/EscBaileWeb/NewWebService?WSDL</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
@@ -58,7 +58,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://192.168.0.12:8080/EscBaileWeb/bajas?WSDL</wsimport-option-value>
+          <wsimport-option-value>http://localhost:8080/EscBaileWeb/bajas?WSDL</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>

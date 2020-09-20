@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "NewWebService", targetNamespace = "http://wsEscBaile/", wsdlLocation = "http://192.168.0.12:8080/EscBaileWeb/NewWebService?WSDL")
+@WebServiceClient(name = "NewWebService", targetNamespace = "http://wsEscBaile/", wsdlLocation = "http://localhost:8080/EscBaileWeb/NewWebService?WSDL")
 public class NewWebService_Service
     extends Service
 {
@@ -30,7 +30,7 @@ public class NewWebService_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://192.168.0.12:8080/EscBaileWeb/NewWebService?WSDL");
+            url = new URL("http://localhost:8080/EscBaileWeb/NewWebService?WSDL");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

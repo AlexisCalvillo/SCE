@@ -14,7 +14,7 @@ public class ClsGestorEscBaile
 // ---------------------------------------------------------------------------    
     public ClsGestorEscBaile ()
     {
-       String strBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\todoEscBaile\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
+       String strBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\todoEscBaile\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
        conexion = new ClsConexion(strBD);
     }
 // ---------------------------------------------------------------------------        

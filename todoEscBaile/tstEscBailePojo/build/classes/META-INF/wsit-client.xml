@@ -6,4 +6,5 @@
  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="mainclientconfig" 
  >
     <import location="bajas.xml" namespace="http://wsEscBaile/"/>
+    <import location="NewWebService.xml" namespace="http://wsEscBaile/"/>
 </definitions>

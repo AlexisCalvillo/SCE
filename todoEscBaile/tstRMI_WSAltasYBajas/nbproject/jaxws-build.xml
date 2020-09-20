@@ -19,7 +19,7 @@
     <target name="wsimport-client-NewWebService" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/NewWebService"/>
         <property name="wsdl-NewWebService" location="xml-resources/web-service-references/NewWebService/wsdl/192.168.0.12_8080/EscBaileWeb/NewWebService.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/NewWebService" destdir="${build.generated.dir}/jax-wsCache/NewWebService" wsdl="${wsdl-NewWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://192.168.0.12:8080/EscBaileWeb/NewWebService?WSDL" xnocompile="true" xendorsed="true" package="miWSBDAltas">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/NewWebService" destdir="${build.generated.dir}/jax-wsCache/NewWebService" wsdl="${wsdl-NewWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/EscBaileWeb/NewWebService?WSDL" xnocompile="true" xendorsed="true" package="miWSBDAltas">
             <depends file="${wsdl-NewWebService}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/NewWebService"/>
         </wsimport>
@@ -36,7 +36,7 @@
     <target name="wsimport-client-bajas" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/bajas"/>
         <property name="wsdl-bajas" location="xml-resources/web-service-references/bajas/wsdl/192.168.0.12_8080/EscBaileWeb/bajas.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/bajas" destdir="${build.generated.dir}/jax-wsCache/bajas" wsdl="${wsdl-bajas}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://192.168.0.12:8080/EscBaileWeb/bajas?WSDL" xnocompile="true" xendorsed="true" package="miWSBDBajas">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/bajas" destdir="${build.generated.dir}/jax-wsCache/bajas" wsdl="${wsdl-bajas}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/EscBaileWeb/bajas?WSDL" xnocompile="true" xendorsed="true" package="miWSBDBajas">
             <depends file="${wsdl-bajas}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/bajas"/>
         </wsimport>
