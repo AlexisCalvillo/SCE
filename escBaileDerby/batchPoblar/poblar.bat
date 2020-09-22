@@ -3,7 +3,7 @@ echo ejecucion de scripts para poblar la base de datos
 echo uso: Segun el número es la tabla que se restaura 'indice.txt.' Si se omite se restauran todas 
 echo on
 
-set cb=C:\Users\aalex\Documents\NetBeansProjects\SCE\escBaileDerby\PoblarBD_DB\dist\PoblarBD_DB.jar
+set cb=%cd%\PoblarBD_DB.jar
 
 echo off
 
