@@ -14,7 +14,10 @@ public class ClsGestorEscBaile
 // ---------------------------------------------------------------------------    
     public ClsGestorEscBaile ()
     {
-       String strBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\todoEscBaile\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
+       //Conexión a access
+       //String strBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\todoEscBaile\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
+       //Conexión a Derby
+       String strBD="jdbc:derby://localhost:1527/EscDeBaile";             
        conexion = new ClsConexion(strBD);
     }
 // ---------------------------------------------------------------------------        

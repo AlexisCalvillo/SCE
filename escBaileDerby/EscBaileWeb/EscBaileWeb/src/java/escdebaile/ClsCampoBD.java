@@ -71,7 +71,7 @@ public class ClsCampoBD
    {
       String strRes = strDato; 
       if( this.tipo.compareToIgnoreCase( ClsCampoBD.TIPO_VARCHAR ) == 0 )
-        strRes =  strRes + "(20)";
+        strRes =  strRes + "(50)";
       if( this.tipo.compareToIgnoreCase( ClsCampoBD.TIPO_MONEDA) == 0 )
           strRes=strRes+"(8,2)";
       return strRes; 

@@ -29,7 +29,9 @@ public class ClsConexion
     {
         // no se conecta, solamente crea el objeto
         //Crea el objeto según el tipo de base de datos, se cambia la extensión
-        this.strNomDB = strNomDB + ".accdb";
+        //this.strNomDB = strNomDB + ".accdb";
+        //Conexión de derby
+        this.strNomDB=strNomDB;
     }
     
     public boolean conectate( String unUID, String unPwd )
@@ -46,9 +48,11 @@ public class ClsConexion
             //Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
             //con = DriverManager.getConnection( "jdbc:odbc:" + 
             //                                    strDSN, "", "");
-            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver"); /* often not required for Java 6 and later (JDBC 4.x) */
-            con = DriverManager.getConnection("jdbc:ucanaccess://" + this.strNomDB);  
-            
+            //Class.forName("net.ucanaccess.jdbc.UcanaccessDriver"); /* often not required for Java 6 and later (JDBC 4.x) */
+            //con = DriverManager.getConnection("jdbc:ucanaccess://" + this.strNomDB);  
+            //Conexión con Derby
+            con = DriverManager.getConnection(this.strNomDB,"rafa","rafa");  
+           
             //
             // Si todo va bien, verifica el unID y unPwd
             // (Realmente por medio del API a LDAP o venir ya autenticado e impersonalizado vía el perfil del usuario)
@@ -367,6 +371,37 @@ public class ClsConexion
     
    }
 // --------------------------------------------------------------------------  
+   
+   public String impRS( java.sql.ResultSet rs )
+   {
+       String                     strRes = "";
+       java.sql.ResultSetMetaData rsmd   = null;
+       int n,nCol,i;
+       try
+       {
+           rsmd = rs.getMetaData();
+           nCol = rsmd.getColumnCount();
+           for( i = 1; i<=nCol; i++ )
+               strRes += rsmd.getColumnName(i) + " ";
+           strRes += '\n';
+           n = 0;
+           while( rs.next() )
+           {
+               n++;
+               strRes += n + " ";
+               for( i = 1; i<=nCol; i++ )
+                  strRes += rs.getString(i) + " ";
+               strRes += '\n';
+           }
+       }
+       catch(Exception e )
+       {
+           e.printStackTrace();
+       }
+       
+       return strRes;
+   }
+   // ---------------------------------------------------------------------------    
    public boolean eliminaRegs( String strTV, 
                                              java.util.TreeMap<String,ClsCampoBD> colCampos, int opc)
    {
@@ -416,20 +451,20 @@ public class ClsConexion
     public static void main(String[] args)
     {
        //System.out.println("Hola...");
-        int intPrueba[] = {9,1,5,4,6,2,7,2,8};
-        int i,n = 1;
+        int intPrueba[] = {1,5,4,6,2,7,2,8,9};
+        int i,n = 8;
         ResultSet r = null;
         java.util.TreeMap<String,ClsCampoBD> colCampos = null;
         
-        String strLocBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\todoEscBaile\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
-               
+        //String strLocBD = "C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\todoEscBaile\\EscBaileWeb\\EscBaileWeb\\EscDeBaile";
+        String strLocBD ="jdbc:derby://localhost:1527/EscDeBaile";              
         try
         {
            ClsConexion c = new ClsConexion(strLocBD);
            c.conectate("rafa","rafa");
            if( c.conectado() )    
            {
-           	  for( i = 0; i < n; i++ )
+                for( i = 0; i < n; i++ ){
                 switch( intPrueba[i] )
                 {
                   case 1:  
@@ -473,7 +508,7 @@ public class ClsConexion
                                         new ClsCampoBD("nombre","Número "+ i,ClsCampoBD.TIPO_VARCHAR,"")); 
                          colCampos.put("clvAlumno",new ClsCampoBD("clvAlumno","1000"+i,ClsCampoBD.TIPO_VARCHAR,"")); 
                          c.insertaReg("tblAlumnos",colCampos );
-                         //System.out.println(c.impRS(r));
+                         System.out.println(c.impRS(r));
                          break;
                    case 6:
                          colCampos = new TreeMap<String,ClsCampoBD>();
@@ -485,7 +520,7 @@ public class ClsConexion
                                         new ClsCampoBD("nombre","",ClsCampoBD.TIPO_VARCHAR,"Número 1")); 
                          colCampos.put("clvAlumno",new ClsCampoBD("clvAlumno","2525",ClsCampoBD.TIPO_VARCHAR,"10001")); 
                          c.modificaReg("tblAlumnos",colCampos );
-                         //System.out.println(c.impRS(r));
+                         System.out.println(c.impRS(r));
                          break;
                    case 7:
                          colCampos = new TreeMap<String,ClsCampoBD>();
@@ -497,7 +532,7 @@ public class ClsConexion
                                         new ClsCampoBD("nombre","",ClsCampoBD.TIPO_VARCHAR,"Número 1")); 
                          colCampos.put("clvAlumno",new ClsCampoBD("clvAlumno","",ClsCampoBD.TIPO_VARCHAR,"2525")); 
                          c.eliminaRegs("tblAlumnos",colCampos,1 );
-                         //System.out.println(c.impRS(r));
+                         System.out.println(c.impRS(r));
                          break;
                    case 8:
                          colCampos=new TreeMap<String, ClsCampoBD>();
@@ -511,7 +546,7 @@ public class ClsConexion
                          r = c.obtenRS("tblAlumnosXGrupo",colCampos );
                          System.out.println(c.obtenCadenaInsertRs("tblAlumnos", r));
                            break;
-                         
+                }
                }
                
                
