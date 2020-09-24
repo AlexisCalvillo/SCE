@@ -35,7 +35,7 @@
         {
            strNomDatos[col] = mm.getColumnName(col);
            strDatos[col]    = (String) mm.getValueAt(0, col);           
-           if( !strNomDatos[col].trim().toLowerCase().startsWith("clv") )
+           if( !strNomDatos[col].trim().toUpperCase().startsWith("CLV") )
            {           
              strValor = request.getParameter(strNomDatos[col]);
              mm.setValueAt(strValor, 0, col);

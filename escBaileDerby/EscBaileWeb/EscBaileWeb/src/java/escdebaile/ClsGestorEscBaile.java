@@ -98,12 +98,13 @@ public class ClsGestorEscBaile
               
       // se obtiene la colección de campos de la tabla de los alumnos
       java.util.TreeMap<String,ClsCampoBD> colCampos = conexion.obtenMapaCampos(conexion.obtenRS("tblAlumnos"));
-      
       n = arr_nomCampos.length;
       
       // se rellena el valor para cada campo
       for( i = 0; i < n; i++ )
-       ((ClsCampoBD) colCampos.get(arr_nomCampos[i])).valor = arr_datos[i];
+            //System.out.println(arr_nomCampos[i]);
+       ((ClsCampoBD) colCampos.get(arr_nomCampos[i].toUpperCase())).valor = arr_datos[i];
+         
       
       // se solicita al objeto conexión que inserte el registro y se espera el resultado
       return conexion.insertaReg("tblAlumnos", colCampos);
@@ -121,7 +122,7 @@ public class ClsGestorEscBaile
       
       // se rellena el valor para cada campo
       for( i = 0; i < n; i++ )
-       ((ClsCampoBD) colCampos.get(arr_nomCampos[i])).valWhere = arr_datos[i];
+       ((ClsCampoBD) colCampos.get(arr_nomCampos[i].toUpperCase())).valWhere = arr_datos[i];
       
       // se solicita al objeto conexión que elimine el registro y se espera el resultado
       return conexion.eliminaRegs("tblAlumnos", colCampos, tipo);
@@ -140,20 +141,20 @@ public class ClsGestorEscBaile
            strNomDatos[col] = mm.getColumnName(col);
            strDatos[col]    = (String) mm.getValueAt(0, col);
            System.out.println(col + " -> " + strNomDatos[col] + ":" + strDatos[col]);
-           if( strNomDatos[col].toLowerCase().startsWith("clv"))
+           if( strNomDatos[col].toUpperCase().startsWith("CLV"))
            {
                colCve = col;
                strCve = strDatos[col];
            }
         }
         java.util.TreeMap<String,ClsCampoBD> colCampos = 
-                conexion.obtenMapaCampos(conexion.obtenRegSelect("Select * from tblAlumnos where clvAlumno ='" + strCve + "';"));
+                conexion.obtenMapaCampos(conexion.obtenRegSelect("Select * from tblAlumnos where clvAlumno ='" + strCve + "'"));
         
         for( col = 0; col < numCampos; col++ )
         {
-            colCampos.get(strNomDatos[col]).valor = strDatos[col];
+            colCampos.get(strNomDatos[col].toUpperCase()).valor = strDatos[col];
         }
-        colCampos.get(strNomDatos[colCve]).valWhere = strCve;
+        colCampos.get(strNomDatos[colCve].toUpperCase()).valWhere = strCve;
        
         return conexion.modificaReg("tblAlumnos", colCampos);
         

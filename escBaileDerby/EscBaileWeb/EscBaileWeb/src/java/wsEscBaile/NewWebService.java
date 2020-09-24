@@ -34,7 +34,7 @@ public class NewWebService {
         //
         // habilitar el alta de alumno
         //
-        String arrStrNomCampos[] = {"clvAlumno","apPaterno","apMaterno","nombre"};
+        String arrStrNomCampos[] = {"apMaterno","apPaterno","clvAlumno","nombre"};
         String arrStrValCampos[] = new String[4];
         
         boolean blnRes = false;
@@ -45,10 +45,11 @@ public class NewWebService {
         boolean conectado = gestor.conectaBD("rafa","rafa");
     
         if( conectado )
-        {             
-          arrStrValCampos[0] = cveAlumno;
+        {      
+          System.out.println("Se conecto");
+          arrStrValCampos[2] = cveAlumno;
           arrStrValCampos[1] = apPaternoAlumno;
-          arrStrValCampos[2] = apMaternoAlumno;
+          arrStrValCampos[0] = apMaternoAlumno;
           arrStrValCampos[3] = nombreAlumno;
             
           blnRes = gestor.altaAlumno(arrStrNomCampos,arrStrValCampos);

@@ -28,7 +28,9 @@
       {         
              escdebaile.MiModelo mm = gestor.obtenModeloAlumnos();;
 
-             int ren,col,mRen,nCol;
+             int ren,col,mRen,nCol,cve;
+             cve=0;
+             
              mRen = mm.getRowCount();
              nCol = mm.getColumnCount();
              out.println("<h2>Página opc_10_listaAlumnos.jsp</h2>");
@@ -36,12 +38,15 @@
              out.println("<br><Form action='opc_10_listaAlumnos_proc.jsp'>");
              out.println("<table border='1'><tr>");
              out.println("<th>Click</th>");
-             for(col=0; col< nCol; col++ )
+             for(col=0; col< nCol; col++ ){
                  out.println("<th>" + mm.getColumnName(col) + "</th>");
+                 if(mm.getColumnName(col).toLowerCase().startsWith("clv"))
+                     cve=col;
+             }
              out.println("</tr>");
              for( ren = 0; ren < mRen; ren++ )
              {            
-               out.println("<TR><TD><input type='radio' name='cve' value='" + mm.getValueAt(ren,0) + "'/></TD>");                
+               out.println("<TR><TD><input type='radio' name='cve' value='" + mm.getValueAt(ren,cve) + "'/></TD>");                
 
                for( col = 0; col < nCol; col++ )
                {
