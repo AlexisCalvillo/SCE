@@ -61,7 +61,7 @@ public class ClsCampoBD
       if( this.tipo.compareToIgnoreCase( ClsCampoBD.TIPO_VARCHAR ) == 0 )
         strRes = '\''+ strRes + '\'';
       if( this.tipo.compareToIgnoreCase( ClsCampoBD.TIPO_MONEDA) == 0 )
-          strRes=strRes+"(8,2)";
+          strRes=strRes;
       if( this.tipo.compareToIgnoreCase( ClsCampoBD.TIPO_DATE ) == 0 )
         strRes = '\''+ strRes + '\'';
       

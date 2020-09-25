@@ -22,9 +22,11 @@ public class Cliente
        String strCadRes;
        boolean blnRes;
        long i,n,t0,t1,dt;
-       //wssuma.MiWSSuma_Service service = new wssuma.MiWSSuma_Service();
+       boolean baja;
+       //wssuma.MiWSuma_Service service = new wssuma.MiWSSuma_Service();
        String host = (args.length < 1) ? null : args[0];
-       n = (args.length == 2) ? Long.parseLong(args[1]):20;
+       n = (args.length  >= 2) ? Long.parseLong(args[1]):20;
+       baja= (args.length>=3);
        /*if(args.length==0){
            n=20;
        }
@@ -48,7 +50,8 @@ public class Cliente
              nomAlumno="acte"+lngQuienSoy;
              apPatAlumno="apcte"+lngQuienSoy;
              apMatAlumno="amcte"+lngQuienSoy;  
-               
+             miWSBDAltas.NewWebService_Service service = new miWSBDAltas.NewWebService_Service();
+             miWSBDAltas.NewWebService portA = service.getNewWebServicePort();
              for(i= 0; i < n; i++ )
              {
                
@@ -57,7 +60,7 @@ public class Cliente
                blnRes=altaAlumno(cveAlumno+strSufAlumno,
                                 nomAlumno+strSufAlumno,
                                 apPatAlumno+strSufAlumno,
-                                apMatAlumno+strSufAlumno);
+                                apMatAlumno+strSufAlumno,portA);
             
                t1 = System.currentTimeMillis();
                dt = t1 - t0;
@@ -77,8 +80,15 @@ public class Cliente
                strCadRes=blnRes?"Se ha realizado el alta de clave" + cveAlumno + strSufAlumno: "No se pudo realizar "+ "el alta de clave " + cveAlumno + strSufAlumno;
                System.out.print(strCadRes);
              }
-             blnRes=bajaLike(cveAlumno+"*");
-             strCadRes=blnRes?"Se ha realizado la baja like": "No se pudo realizar "+ "la bajaa (like) " + cveAlumno;
+             if (baja){
+                 
+                miWSBDBajas.Bajas_Service serviceB = new miWSBDBajas.Bajas_Service();
+                miWSBDBajas.Bajas portB = serviceB.getBajasPort();
+                blnRes=bajaLike(cveAlumno+"%", portB);
+                strCadRes=blnRes?"Se ha realizado la baja like": "No se pudo realizar "+ "la bajaa (like) " + cveAlumno;
+                 System.out.println(strCadRes);
+             }
+    
              servDisparo.acumula(sumDeltaT, sumDeltaT2, n, dtMax, dtMin);
           } 
           catch (Exception e)
@@ -93,15 +103,11 @@ public class Cliente
     //    return port.suma(a, b);
     //}
 
-    private static boolean altaAlumno(java.lang.String cveAlumno, java.lang.String nombreAlumno, java.lang.String apPaternoAlumno, java.lang.String apMaternoAlumno) {
-        miWSBDAltas.NewWebService_Service service = new miWSBDAltas.NewWebService_Service();
-        miWSBDAltas.NewWebService port = service.getNewWebServicePort();
+    private static boolean altaAlumno(java.lang.String cveAlumno, java.lang.String nombreAlumno, java.lang.String apPaternoAlumno, java.lang.String apMaternoAlumno, miWSBDAltas.NewWebService port) {
         return port.altaAlumno(cveAlumno, nombreAlumno, apPaternoAlumno, apMaternoAlumno);
     }
 
-    private static boolean bajaLike(java.lang.String cveAlumno) {
-        miWSBDBajas.Bajas_Service service = new miWSBDBajas.Bajas_Service();
-        miWSBDBajas.Bajas port = service.getBajasPort();
+    private static boolean bajaLike(java.lang.String cveAlumno, miWSBDBajas.Bajas port) {
         return port.bajaLike(cveAlumno);
     }
 
