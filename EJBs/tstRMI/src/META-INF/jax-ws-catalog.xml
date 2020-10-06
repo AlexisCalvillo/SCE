@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://192.168.0.10:8080/proyT01_159702_AACM/miWSSuma?WSDL" uri="wsdl/192.168.0.10_8080/proyT01_159702_AACM/miWSSuma.wsdl"/>
+    <system systemId="http://192.168.0.10:8080/proyT01_159702_AACM/miWSSuma?xsd=1" uri="wsdl/192.168.0.10_8080/proyT01_159702_AACM/miWSSuma.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WSClienteExponeEJB/WSExponeEJB?WSDL" uri="wsdl/localhost_8080/WSClienteExponeEJB/WSExponeEJB.wsdl"/>
+    <system systemId="http://localhost:8080/WSClienteExponeEJB/WSExponeEJB?xsd=1" uri="wsdl/localhost_8080/WSClienteExponeEJB/WSExponeEJB.xsd_1.xsd"/>
+</catalog>
