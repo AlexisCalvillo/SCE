@@ -39,4 +39,15 @@ public class CategoryFacade extends AbstractFacade<Category> {
 
         return lista;
     }
+     
+      public java.util.List<Category> findByNameLike(String nombre)
+    {
+        em = getEntityManager();
+        TypedQuery<Category> queryCatByName = em.createNamedQuery("Category.findByNameLike", Category.class);
+        queryCatByName.setParameter("name", nombre);
+        java.util.List<Category> lista= queryCatByName.getResultList();
+
+        return lista;
+    }
+    
 }

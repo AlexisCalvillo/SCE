@@ -72,4 +72,12 @@ public class WSCat {
         return ejbRef.findByName(name);
     }
     
+     /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "findAllLike")
+    public List<Category> findAllLike(@WebParam(name = "name") String name) {
+        //TODO write your implementation code here:
+        return ejbRef.findByNameLike(name);
+    }
 }
