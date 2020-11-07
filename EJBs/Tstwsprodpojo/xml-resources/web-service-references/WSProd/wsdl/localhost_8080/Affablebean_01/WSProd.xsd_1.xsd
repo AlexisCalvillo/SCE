@@ -18,6 +18,10 @@
 
 <xs:element name="findByName" type="tns:findByName"/>
 
+<xs:element name="findByNameLike" type="tns:findByNameLike"/>
+
+<xs:element name="findByNameLikeResponse" type="tns:findByNameLikeResponse"/>
+
 <xs:element name="findByNameResponse" type="tns:findByNameResponse"/>
 
 <xs:element name="findRange" type="tns:findRange"/>
@@ -29,6 +33,10 @@
 <xs:element name="operation" type="tns:operation"/>
 
 <xs:element name="operationResponse" type="tns:operationResponse"/>
+
+<xs:element name="precioPromPorCatId" type="tns:precioPromPorCatId"/>
+
+<xs:element name="precioPromPorCatIdResponse" type="tns:precioPromPorCatIdResponse"/>
 
 <xs:element name="product" type="tns:product"/>
 
@@ -80,9 +88,31 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="findByNameLike">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findByNameLikeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="remove">
 <xs:sequence>
 <xs:element name="entity" type="tns:product" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
 </xs:sequence>
 </xs:complexType>
 
@@ -96,13 +126,13 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="findAll">
+<xs:complexType name="precioPromPorCatId">
 <xs:sequence/>
 </xs:complexType>
 
-<xs:complexType name="findAllResponse">
+<xs:complexType name="precioPromPorCatIdResponse">
 <xs:sequence>
-<xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 

@@ -96,6 +96,14 @@ public class WSProd {
         return ejbRef.findByName(name);
     }
 
-   
+   @WebMethod(operationName = "findByNameLike")
+    public List<Product> findByNameLike(@WebParam(name = "name") String name) {
+        //TODO write your implementation code here:
+        return ejbRef.findByNameLike(name);
+    }
     
+     @WebMethod(operationName = "precioPromPorCatId")
+    public String precioPromPorCatId() {
+        return ejbRef.precioPromPorCatId();
+    }
 }

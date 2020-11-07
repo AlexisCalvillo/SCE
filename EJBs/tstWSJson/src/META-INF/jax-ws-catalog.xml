@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WsJson/wsJsonPersona?WSDL" uri="wsdl/localhost_8080/WsJson/wsJsonPersona.wsdl"/>
+    <system systemId="http://localhost:8080/WsJson/wsJsonPersona?xsd=1" uri="wsdl/localhost_8080/WsJson/wsJsonPersona.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Affablebean_01/WSCustomer?WSDL" uri="wsdl/localhost_8080/Affablebean_01/WSCustomer.wsdl"/>
+    <system systemId="http://localhost:8080/Affablebean_01/WSCustomer?xsd=1" uri="wsdl/localhost_8080/Affablebean_01/WSCustomer.xsd_1.xsd"/>
+</catalog>

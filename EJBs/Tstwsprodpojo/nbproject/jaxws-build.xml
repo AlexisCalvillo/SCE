@@ -33,5 +33,22 @@
         <delete dir="${build.generated.dir}/jax-wsCache/WSProd"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/wsprod"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-WSProd"/>
+    <target name="wsimport-client-WSCustomer" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSCustomer"/>
+        <property name="wsdl-WSCustomer" location="xml-resources/web-service-references/WSCustomer/wsdl/localhost_8080/Affablebean_01/WSCustomer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSCustomer" destdir="${build.generated.dir}/jax-wsCache/WSCustomer" wsdl="${wsdl-WSCustomer}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Affablebean_01/WSCustomer?WSDL" xnocompile="true" xendorsed="true" package="wscust">
+            <depends file="${wsdl-WSCustomer}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSCustomer"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSCustomer">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSCustomer" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSCustomer"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/wscust"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WSProd, wsimport-client-WSCustomer"/>
 </project>
