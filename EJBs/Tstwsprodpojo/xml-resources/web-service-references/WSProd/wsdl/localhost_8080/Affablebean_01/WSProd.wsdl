@@ -28,17 +28,17 @@
 <message name="findByNameResponse">
 <part name="parameters" element="tns:findByNameResponse"/>
 </message>
-<message name="findAll">
-<part name="parameters" element="tns:findAll"/>
-</message>
-<message name="findAllResponse">
-<part name="parameters" element="tns:findAllResponse"/>
-</message>
 <message name="operation">
 <part name="parameters" element="tns:operation"/>
 </message>
 <message name="operationResponse">
 <part name="parameters" element="tns:operationResponse"/>
+</message>
+<message name="findAll">
+<part name="parameters" element="tns:findAll"/>
+</message>
+<message name="findAllResponse">
+<part name="parameters" element="tns:findAllResponse"/>
 </message>
 <message name="precioPromPorCatId">
 <part name="parameters" element="tns:precioPromPorCatId"/>
@@ -46,11 +46,8 @@
 <message name="precioPromPorCatIdResponse">
 <part name="parameters" element="tns:precioPromPorCatIdResponse"/>
 </message>
-<message name="findByNameLike">
-<part name="parameters" element="tns:findByNameLike"/>
-</message>
-<message name="findByNameLikeResponse">
-<part name="parameters" element="tns:findByNameLikeResponse"/>
+<message name="edit">
+<part name="parameters" element="tns:edit"/>
 </message>
 <message name="findRange">
 <part name="parameters" element="tns:findRange"/>
@@ -58,8 +55,11 @@
 <message name="findRangeResponse">
 <part name="parameters" element="tns:findRangeResponse"/>
 </message>
-<message name="edit">
-<part name="parameters" element="tns:edit"/>
+<message name="findByNameLike">
+<part name="parameters" element="tns:findByNameLike"/>
+</message>
+<message name="findByNameLikeResponse">
+<part name="parameters" element="tns:findByNameLikeResponse"/>
 </message>
 <portType name="WSProd">
 <operation name="remove">
@@ -80,28 +80,28 @@
 <input wsam:Action="http://wsprod/WSProd/findByNameRequest" message="tns:findByName"/>
 <output wsam:Action="http://wsprod/WSProd/findByNameResponse" message="tns:findByNameResponse"/>
 </operation>
-<operation name="findAll">
-<input wsam:Action="http://wsprod/WSProd/findAllRequest" message="tns:findAll"/>
-<output wsam:Action="http://wsprod/WSProd/findAllResponse" message="tns:findAllResponse"/>
-</operation>
 <operation name="operation">
 <input wsam:Action="http://wsprod/WSProd/operationRequest" message="tns:operation"/>
 <output wsam:Action="http://wsprod/WSProd/operationResponse" message="tns:operationResponse"/>
+</operation>
+<operation name="findAll">
+<input wsam:Action="http://wsprod/WSProd/findAllRequest" message="tns:findAll"/>
+<output wsam:Action="http://wsprod/WSProd/findAllResponse" message="tns:findAllResponse"/>
 </operation>
 <operation name="precioPromPorCatId">
 <input wsam:Action="http://wsprod/WSProd/precioPromPorCatIdRequest" message="tns:precioPromPorCatId"/>
 <output wsam:Action="http://wsprod/WSProd/precioPromPorCatIdResponse" message="tns:precioPromPorCatIdResponse"/>
 </operation>
-<operation name="findByNameLike">
-<input wsam:Action="http://wsprod/WSProd/findByNameLikeRequest" message="tns:findByNameLike"/>
-<output wsam:Action="http://wsprod/WSProd/findByNameLikeResponse" message="tns:findByNameLikeResponse"/>
+<operation name="edit">
+<input wsam:Action="http://wsprod/WSProd/edit" message="tns:edit"/>
 </operation>
 <operation name="findRange">
 <input wsam:Action="http://wsprod/WSProd/findRangeRequest" message="tns:findRange"/>
 <output wsam:Action="http://wsprod/WSProd/findRangeResponse" message="tns:findRangeResponse"/>
 </operation>
-<operation name="edit">
-<input wsam:Action="http://wsprod/WSProd/edit" message="tns:edit"/>
+<operation name="findByNameLike">
+<input wsam:Action="http://wsprod/WSProd/findByNameLikeRequest" message="tns:findByNameLike"/>
+<output wsam:Action="http://wsprod/WSProd/findByNameLikeResponse" message="tns:findByNameLikeResponse"/>
 </operation>
 </portType>
 <binding name="WSProdPortBinding" type="tns:WSProd">
@@ -145,7 +145,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="findAll">
+<operation name="operation">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -154,7 +154,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="operation">
+<operation name="findAll">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -172,14 +172,11 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="findByNameLike">
+<operation name="edit">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
 </input>
-<output>
-<soap:body use="literal"/>
-</output>
 </operation>
 <operation name="findRange">
 <soap:operation soapAction=""/>
@@ -190,11 +187,14 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="edit">
+<operation name="findByNameLike">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
 </input>
+<output>
+<soap:body use="literal"/>
+</output>
 </operation>
 </binding>
 <service name="WSProd">

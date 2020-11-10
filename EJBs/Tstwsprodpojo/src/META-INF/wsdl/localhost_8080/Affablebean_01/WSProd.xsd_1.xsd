@@ -106,21 +106,21 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="findAll">
-<xs:sequence/>
-</xs:complexType>
-
-<xs:complexType name="findAllResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="operation">
 <xs:sequence/>
 </xs:complexType>
 
 <xs:complexType name="operationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:product" minOccurs="0" maxOccurs="unbounded"/>
 </xs:sequence>

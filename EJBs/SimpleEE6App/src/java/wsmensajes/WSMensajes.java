@@ -5,8 +5,8 @@
  */
 package wsmensajes;
 
-import boundary.MessageFacade;
-import entities.Message;
+import fromtera.MensajesFacade;
+import entidad.Mensajes;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.jws.Oneway;
@@ -22,39 +22,41 @@ import javax.jws.WebService;
 public class WSMensajes {
 
     @EJB
-    private MessageFacade ejbRef;// Add business logic below. (Right-click in editor and choose
+    private MensajesFacade ejbRef;// Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Web Service Operation")
 
     @WebMethod(operationName = "create")
     @Oneway
-    public void create(@WebParam(name = "entity") Message entity) {
-        ejbRef.create(entity);
+    public void create(@WebParam(name = "entity") String entity) {
+        Mensajes ent = new Mensajes();
+        ent.setMsj(entity);
+        ejbRef.create(ent);
     }
 
     @WebMethod(operationName = "edit")
     @Oneway
-    public void edit(@WebParam(name = "entity") Message entity) {
+    public void edit(@WebParam(name = "entity") Mensajes entity) {
         ejbRef.edit(entity);
     }
 
     @WebMethod(operationName = "remove")
     @Oneway
-    public void remove(@WebParam(name = "entity") Message entity) {
+    public void remove(@WebParam(name = "entity") Mensajes entity) {
         ejbRef.remove(entity);
     }
 
     @WebMethod(operationName = "find")
-    public Message find(@WebParam(name = "id") int id) {
+    public Mensajes find(@WebParam(name = "id") int id) {
         return ejbRef.find(new Long(id));
     }
 
     @WebMethod(operationName = "findAll")
-    public List<Message> findAll() {
+    public List<Mensajes> findAll() {
         return ejbRef.findAll();
     }
 
     @WebMethod(operationName = "findRange")
-    public List<Message> findRange(@WebParam(name = "range") int[] range) {
+    public List<Mensajes> findRange(@WebParam(name = "range") int[] range) {
         return ejbRef.findRange(range);
     }
 
@@ -68,8 +70,8 @@ public class WSMensajes {
      */
     @WebMethod(operationName = "creaMensaje")
     public boolean creaMensaje(@WebParam(name = "strMensaje") String strMensaje) {
-        Message entity = new Message();
-        entity.setMessage(strMensaje);
+        Mensajes entity = new Mensajes();
+        entity.setMsj(strMensaje);
         ejbRef.create(entity);
         return true;
     }

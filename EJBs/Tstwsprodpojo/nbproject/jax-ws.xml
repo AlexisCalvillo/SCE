@@ -38,6 +38,42 @@
         </wsimport-option>
       </wsimport-options>
     </client>
+    <client name="WSPedidoItem">
+      <wsdl-url>http://localhost:8080/Affablebean_01/WSPedidoItem?WSDL</wsdl-url>
+      <local-wsdl-file>localhost_8080/Affablebean_01/WSPedidoItem.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">wspedidoitems</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/Affablebean_01/WSPedidoItem?WSDL</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>wspedidoitems</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
     <client name="WSCustomer">
       <wsdl-url>http://localhost:8080/Affablebean_01/WSCustomer?WSDL</wsdl-url>
       <local-wsdl-file>localhost_8080/Affablebean_01/WSCustomer.wsdl</local-wsdl-file>
@@ -71,6 +107,42 @@
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
           <wsimport-option-value>wscust</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+    <client name="wsPedidoHeader">
+      <wsdl-url>http://localhost:8080/Affablebean_01/wsPedidoHeader?WSDL</wsdl-url>
+      <local-wsdl-file>localhost_8080/Affablebean_01/wsPedidoHeader.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">wspedidoheader</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/Affablebean_01/wsPedidoHeader?WSDL</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>wspedidoheader</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>

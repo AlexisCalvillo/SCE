@@ -31,14 +31,14 @@
 <message name="findAllResponse">
 <part name="parameters" element="tns:findAllResponse"/>
 </message>
+<message name="edit">
+<part name="parameters" element="tns:edit"/>
+</message>
 <message name="findRange">
 <part name="parameters" element="tns:findRange"/>
 </message>
 <message name="findRangeResponse">
 <part name="parameters" element="tns:findRangeResponse"/>
-</message>
-<message name="edit">
-<part name="parameters" element="tns:edit"/>
 </message>
 <portType name="WSCustomer">
 <operation name="remove">
@@ -60,12 +60,12 @@
 <input wsam:Action="http://wscust/WSCustomer/findAllRequest" message="tns:findAll"/>
 <output wsam:Action="http://wscust/WSCustomer/findAllResponse" message="tns:findAllResponse"/>
 </operation>
+<operation name="edit">
+<input wsam:Action="http://wscust/WSCustomer/edit" message="tns:edit"/>
+</operation>
 <operation name="findRange">
 <input wsam:Action="http://wscust/WSCustomer/findRangeRequest" message="tns:findRange"/>
 <output wsam:Action="http://wscust/WSCustomer/findRangeResponse" message="tns:findRangeResponse"/>
-</operation>
-<operation name="edit">
-<input wsam:Action="http://wscust/WSCustomer/edit" message="tns:edit"/>
 </operation>
 </portType>
 <binding name="WSCustomerPortBinding" type="tns:WSCustomer">
@@ -112,6 +112,12 @@
 <soap:body use="literal"/>
 </output>
 </operation>
+<operation name="edit">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+</operation>
 <operation name="findRange">
 <soap:operation soapAction=""/>
 <input>
@@ -120,12 +126,6 @@
 <output>
 <soap:body use="literal"/>
 </output>
-</operation>
-<operation name="edit">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
 </operation>
 </binding>
 <service name="WSCustomer">
