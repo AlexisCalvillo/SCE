@@ -1,0 +1,134 @@
+ant -f C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\EJBs\\Pojo_Parcial_02 -Djavac.includes=pojo_parcial_02/Pojo_Parcial_02.java -Dnb.internal.action.name=run.single -Drun.class=pojo_parcial_02.Pojo_Parcial_02 run-single
+init:
+Deleting: C:\Users\aalex\Documents\NetBeansProjects\SCE\EJBs\Pojo_Parcial_02\build\built-jar.properties
+deps-jar:
+Updating property file: C:\Users\aalex\Documents\NetBeansProjects\SCE\EJBs\Pojo_Parcial_02\build\built-jar.properties
+wsimport-init:
+wsimport-client-WSCat:
+files are up to date
+wsimport-client-WSCustomer:
+files are up to date
+wsimport-client-WSProd:
+files are up to date
+wsimport-client-wsPedidoHeader:
+files are up to date
+wsimport-client-WSPedidoItem:
+files are up to date
+wsimport-client-generate:
+Compiling 1 source file to C:\Users\aalex\Documents\NetBeansProjects\SCE\EJBs\Pojo_Parcial_02\build\classes
+compile-single:
+run-single:
+SCE: Segundo examen parcial de 159702 Arcadio Calvillo Madrid
+----------------------------------------------------
+          2020-11-10T12:59:39.015-06:00
+----------------------------------------------------
+Se ha dado de alta la categoría 19 ... Limpieza 159702
+Lista de Categorías:
+Categoría:1->dairy
+Categoría:2->meats
+Categoría:3->bakery
+Categoría:4->fruit & veg
+Categoría:5->Limpieza 159702
+Categoría:6->Limpieza 159702
+Categoría:7->Limpieza 159702
+Categoría:8->Limpieza 159702
+Categoría:9->Limpieza 159702
+Categoría:10->Limpieza 159702
+Categoría:11->Limpieza 159702
+Categoría:12->Limpieza 159702
+Categoría:13->Limpieza 159702
+Categoría:14->Limpieza 159702
+Categoría:15->Limpieza 159702
+Categoría:16->Limpieza 159702
+Categoría:17->Limpieza 159702
+Categoría:18->Limpieza 159702
+Categoría:19->Limpieza 159702
+Lista de Productos:
+Producto:1 milk semi skimmed (1L) cat:1 dairy
+Producto:2 cheese mild cheddar (330g) cat:1 dairy
+Producto:3 butter unsalted (250g) cat:1 dairy
+Producto:4 free range eggs medium-sized (6 eggs) cat:1 dairy
+Producto:5 organic meat patties rolled in fresh herbs patties (250g) cat:2 meats
+Producto:6 parma ham matured, organic (70g) cat:2 meats
+Producto:7 chicken leg free range (250g) cat:2 meats
+Producto:8 sausages reduced fat, pork 3 sausages (350g) cat:2 meats
+Producto:9 sunflower seed loaf 600g cat:3 bakery
+Producto:10 sesame seed bagel 4 bagels cat:3 bakery
+Producto:11 pumpkin seed bun 4 buns cat:3 bakery
+Producto:12 chocolate cookies contain peanuts (3 cookies) cat:3 bakery
+Producto:13 corn on the cob 2 pieces cat:4 fruit & veg
+Producto:14 red currants 150g cat:4 fruit & veg
+Producto:15 broccoli 500g cat:4 fruit & veg
+Producto:16 seedless watermelon 250g cat:4 fruit & veg
+Producto:17 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:18 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:19 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:20 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:21 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:22 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:23 Prod_Arcadio descripcion Arcadio cat:6 Limpieza 159702
+Producto:24 Prod_Calvillo descripcion Calvillo cat:6 Limpieza 159702
+Producto:25 Prod_Madrid descripcion Madrid cat:6 Limpieza 159702
+Producto:26 Prod_Arcadio descripcion Arcadio cat:7 Limpieza 159702
+Producto:27 Prod_Calvillo descripcion Calvillo cat:7 Limpieza 159702
+Producto:28 Prod_Madrid descripcion Madrid cat:7 Limpieza 159702
+Producto:29 Prod_Arcadio descripcion Arcadio cat:8 Limpieza 159702
+Producto:30 Prod_Calvillo descripcion Calvillo cat:8 Limpieza 159702
+Producto:31 Prod_Madrid descripcion Madrid cat:8 Limpieza 159702
+Producto:32 Prod_Arcadio descripcion Arcadio cat:9 Limpieza 159702
+Producto:33 Prod_Calvillo descripcion Calvillo cat:9 Limpieza 159702
+Producto:34 Prod_Madrid descripcion Madrid cat:9 Limpieza 159702
+Producto:35 Prod_Arcadio descripcion Arcadio cat:10 Limpieza 159702
+Producto:36 Prod_Calvillo descripcion Calvillo cat:10 Limpieza 159702
+Producto:37 Prod_Madrid descripcion Madrid cat:10 Limpieza 159702
+Producto:38 Prod_Arcadio descripcion Arcadio cat:11 Limpieza 159702
+Producto:39 Prod_Calvillo descripcion Calvillo cat:11 Limpieza 159702
+Producto:40 Prod_Madrid descripcion Madrid cat:11 Limpieza 159702
+Producto:41 Prod_Arcadio descripcion Arcadio cat:12 Limpieza 159702
+Producto:42 Prod_Calvillo descripcion Calvillo cat:12 Limpieza 159702
+Producto:43 Prod_Madrid descripcion Madrid cat:12 Limpieza 159702
+Producto:44 Prod_Arcadio descripcion Arcadio cat:13 Limpieza 159702
+Producto:45 Prod_Calvillo descripcion Calvillo cat:13 Limpieza 159702
+Producto:46 Prod_Madrid descripcion Madrid cat:13 Limpieza 159702
+Producto:47 Prod_Arcadio descripcion Arcadio cat:14 Limpieza 159702
+Producto:48 Prod_Calvillo descripcion Calvillo cat:14 Limpieza 159702
+Producto:49 Prod_Madrid descripcion Madrid cat:14 Limpieza 159702
+Producto:50 Prod_Arcadio descripcion Arcadio cat:15 Limpieza 159702
+Producto:51 Prod_Calvillo descripcion Calvillo cat:15 Limpieza 159702
+Producto:52 Prod_Madrid descripcion Madrid cat:15 Limpieza 159702
+Producto:53 Nuevo Descripcion del producto fase 3 cat:1 dairy
+Producto:54 Prod_Arcadio descripcion Arcadio cat:16 Limpieza 159702
+Producto:55 Prod_Calvillo descripcion Calvillo cat:16 Limpieza 159702
+Producto:56 Prod_Madrid descripcion Madrid cat:16 Limpieza 159702
+Producto:57 Prod_Arcadio descripcion Arcadio cat:17 Limpieza 159702
+Producto:58 Prod_Calvillo descripcion Calvillo cat:17 Limpieza 159702
+Producto:59 Prod_Madrid descripcion Madrid cat:17 Limpieza 159702
+Producto:60 Prod_Arcadio descripcion Arcadio cat:18 Limpieza 159702
+Producto:61 Prod_Calvillo descripcion Calvillo cat:18 Limpieza 159702
+Producto:62 Prod_Madrid descripcion Madrid cat:18 Limpieza 159702
+Producto:63 Prod_Arcadio descripcion Arcadio cat:19 Limpieza 159702
+Producto:64 Prod_Calvillo descripcion Calvillo cat:19 Limpieza 159702
+Producto:65 Prod_Madrid descripcion Madrid cat:19 Limpieza 159702
+Se ha dado de alta el clte:20 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Lista de Clientes:
+Clte:1 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:2 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:3 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:4 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:5 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:6 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:7 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 rgamboa@itam.mx
+Clte:8 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:9 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:10 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:11 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:12 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:13 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:14 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:15 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:16 Rafael Gregorio Rio Hondo 1 ccNumber MT 5556284061 rgamboa@itam.mx
+Clte:17 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:18 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:19 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:20 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+BUILD SUCCESSFUL (total time: 2 seconds)

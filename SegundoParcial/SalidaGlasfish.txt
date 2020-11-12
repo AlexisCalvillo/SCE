@@ -1,0 +1,741 @@
+Finer:   client acquired: 1157390532
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 417103807
+Finest:   persist() operation called on: entidades.Category[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Category[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CATEGORY (NAME) VALUES (?)
+	bind => [1 parameter bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (18 -> entidades.Category[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1667818496
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 823845554
+Finer:   begin unit of work flush
+Finer:   end unit of work flush
+Finest:   Execute query ReadAllQuery(referenceClass=Category )
+Finest:   Connection acquired from connection pool [read].
+Finest:   reconnecting to external connection pool
+Fine:   SELECT ID, NAME FROM CATEGORY
+Finest:   Connection released to connection pool [read].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1606879233
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 2115304691
+Finest:   persist() operation called on: entidades.Product[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Category )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Product[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO PRODUCT (DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (60 -> entidades.Product[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1395367261
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 2072664243
+Finest:   persist() operation called on: entidades.Product[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Category )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Product[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO PRODUCT (DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (61 -> entidades.Product[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1512288554
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1442092265
+Finest:   persist() operation called on: entidades.Product[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Category )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Product[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO PRODUCT (DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (62 -> entidades.Product[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 618762855
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1231284338
+Finer:   begin unit of work flush
+Finer:   end unit of work flush
+Finest:   Execute query ReadAllQuery(referenceClass=Product )
+Finest:   Connection acquired from connection pool [read].
+Finest:   reconnecting to external connection pool
+Fine:   SELECT ID, DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID FROM PRODUCT
+Finest:   Connection released to connection pool [read].
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=6 ]
+Finest:   Register the existing object entidades.Category[ id=6 ]
+Finest:   Register the existing object entidades.Category[ id=6 ]
+Finest:   Register the existing object entidades.Category[ id=7 ]
+Finest:   Register the existing object entidades.Category[ id=7 ]
+Finest:   Register the existing object entidades.Category[ id=7 ]
+Finest:   Register the existing object entidades.Category[ id=8 ]
+Finest:   Register the existing object entidades.Category[ id=8 ]
+Finest:   Register the existing object entidades.Category[ id=8 ]
+Finest:   Register the existing object entidades.Category[ id=9 ]
+Finest:   Register the existing object entidades.Category[ id=9 ]
+Finest:   Register the existing object entidades.Category[ id=9 ]
+Finest:   Register the existing object entidades.Category[ id=10 ]
+Finest:   Register the existing object entidades.Category[ id=10 ]
+Finest:   Register the existing object entidades.Category[ id=10 ]
+Finest:   Register the existing object entidades.Category[ id=11 ]
+Finest:   Register the existing object entidades.Category[ id=11 ]
+Finest:   Register the existing object entidades.Category[ id=11 ]
+Finest:   Register the existing object entidades.Category[ id=12 ]
+Finest:   Register the existing object entidades.Category[ id=12 ]
+Finest:   Register the existing object entidades.Category[ id=12 ]
+Finest:   Register the existing object entidades.Category[ id=13 ]
+Finest:   Register the existing object entidades.Category[ id=13 ]
+Finest:   Register the existing object entidades.Category[ id=13 ]
+Finest:   Register the existing object entidades.Category[ id=14 ]
+Finest:   Register the existing object entidades.Category[ id=14 ]
+Finest:   Register the existing object entidades.Category[ id=14 ]
+Finest:   Register the existing object entidades.Category[ id=15 ]
+Finest:   Register the existing object entidades.Category[ id=15 ]
+Finest:   Register the existing object entidades.Category[ id=15 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=16 ]
+Finest:   Register the existing object entidades.Category[ id=16 ]
+Finest:   Register the existing object entidades.Category[ id=16 ]
+Finest:   Register the existing object entidades.Category[ id=17 ]
+Finest:   Register the existing object entidades.Category[ id=17 ]
+Finest:   Register the existing object entidades.Category[ id=17 ]
+Finest:   Register the existing object entidades.Category[ id=18 ]
+Finest:   Register the existing object entidades.Category[ id=18 ]
+Finest:   Register the existing object entidades.Category[ id=18 ]
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 880743303
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1156393021
+Finest:   persist() operation called on: entidades.Customer[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Customer[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CUSTOMER (ADDRESS, CC_NUMBER, CITY_REGION, EMAIL, NAME, PHONE) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [6 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (19 -> entidades.Customer[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 12406661
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 960684643
+Finer:   begin unit of work flush
+Finer:   end unit of work flush
+Finest:   Execute query ReadAllQuery(referenceClass=Customer )
+Finest:   Connection acquired from connection pool [read].
+Finest:   reconnecting to external connection pool
+Fine:   SELECT ID, ADDRESS, CC_NUMBER, CITY_REGION, EMAIL, NAME, PHONE FROM CUSTOMER
+Finest:   Connection released to connection pool [read].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1223029982
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 304267859
+Finest:   persist() operation called on: entidades.CustomerOrder[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Customer )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.CustomerOrder[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CUSTOMER_ORDER (AMOUNT, CONFIRMATION_NUMBER, DATE_CREATED, CUSTOMER_ID) VALUES (?, ?, ?, ?)
+	bind => [4 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (26 -> entidades.CustomerOrder[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 853986832
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1502340826
+Finest:   persist() operation called on: entidades.CustomerOrder[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Customer )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.CustomerOrder[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CUSTOMER_ORDER (AMOUNT, CONFIRMATION_NUMBER, DATE_CREATED, CUSTOMER_ID) VALUES (?, ?, ?, ?)
+	bind => [4 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (27 -> entidades.CustomerOrder[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1010558289
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 28032386
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=26, productId=60 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=26, productId=60 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 615522685
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 740043884
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=26, productId=61 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=26, productId=61 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 987615297
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 932782978
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=26, productId=62 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=26, productId=62 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1089408099
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 520534875
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=27, productId=60 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=27, productId=60 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 76075844
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1351102059
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=27, productId=61 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=27, productId=61 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1936690131
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 754365175
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=27, productId=62 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=27, productId=62 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1067944744
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 639741910
+Finest:   persist() operation called on: entidades.Category[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Category[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CATEGORY (NAME) VALUES (?)
+	bind => [1 parameter bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (19 -> entidades.Category[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1533557511
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 870066504
+Finer:   begin unit of work flush
+Finer:   end unit of work flush
+Finest:   Execute query ReadAllQuery(referenceClass=Category )
+Finest:   Connection acquired from connection pool [read].
+Finest:   reconnecting to external connection pool
+Fine:   SELECT ID, NAME FROM CATEGORY
+Finest:   Connection released to connection pool [read].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1484255955
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 223432661
+Finest:   persist() operation called on: entidades.Product[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Category )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Product[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO PRODUCT (DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (63 -> entidades.Product[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1727633672
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1805664969
+Finest:   persist() operation called on: entidades.Product[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Category )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Product[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO PRODUCT (DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (64 -> entidades.Product[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 904222283
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 757609057
+Finest:   persist() operation called on: entidades.Product[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Category )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Product[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO PRODUCT (DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID) VALUES (?, ?, ?, ?, ?)
+	bind => [5 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (65 -> entidades.Product[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 906236948
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 524075454
+Finer:   begin unit of work flush
+Finer:   end unit of work flush
+Finest:   Execute query ReadAllQuery(referenceClass=Product )
+Finest:   Connection acquired from connection pool [read].
+Finest:   reconnecting to external connection pool
+Fine:   SELECT ID, DESCRIPTION, LAST_UPDATE, NAME, PRICE, CATEGORY_ID FROM PRODUCT
+Finest:   Connection released to connection pool [read].
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=2 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=3 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=4 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=6 ]
+Finest:   Register the existing object entidades.Category[ id=6 ]
+Finest:   Register the existing object entidades.Category[ id=6 ]
+Finest:   Register the existing object entidades.Category[ id=7 ]
+Finest:   Register the existing object entidades.Category[ id=7 ]
+Finest:   Register the existing object entidades.Category[ id=7 ]
+Finest:   Register the existing object entidades.Category[ id=8 ]
+Finest:   Register the existing object entidades.Category[ id=8 ]
+Finest:   Register the existing object entidades.Category[ id=8 ]
+Finest:   Register the existing object entidades.Category[ id=9 ]
+Finest:   Register the existing object entidades.Category[ id=9 ]
+Finest:   Register the existing object entidades.Category[ id=9 ]
+Finest:   Register the existing object entidades.Category[ id=10 ]
+Finest:   Register the existing object entidades.Category[ id=10 ]
+Finest:   Register the existing object entidades.Category[ id=10 ]
+Finest:   Register the existing object entidades.Category[ id=11 ]
+Finest:   Register the existing object entidades.Category[ id=11 ]
+Finest:   Register the existing object entidades.Category[ id=11 ]
+Finest:   Register the existing object entidades.Category[ id=12 ]
+Finest:   Register the existing object entidades.Category[ id=12 ]
+Finest:   Register the existing object entidades.Category[ id=12 ]
+Finest:   Register the existing object entidades.Category[ id=13 ]
+Finest:   Register the existing object entidades.Category[ id=13 ]
+Finest:   Register the existing object entidades.Category[ id=13 ]
+Finest:   Register the existing object entidades.Category[ id=14 ]
+Finest:   Register the existing object entidades.Category[ id=14 ]
+Finest:   Register the existing object entidades.Category[ id=14 ]
+Finest:   Register the existing object entidades.Category[ id=15 ]
+Finest:   Register the existing object entidades.Category[ id=15 ]
+Finest:   Register the existing object entidades.Category[ id=15 ]
+Finest:   Register the existing object entidades.Category[ id=1 ]
+Finest:   Register the existing object entidades.Category[ id=16 ]
+Finest:   Register the existing object entidades.Category[ id=16 ]
+Finest:   Register the existing object entidades.Category[ id=16 ]
+Finest:   Register the existing object entidades.Category[ id=17 ]
+Finest:   Register the existing object entidades.Category[ id=17 ]
+Finest:   Register the existing object entidades.Category[ id=17 ]
+Finest:   Register the existing object entidades.Category[ id=18 ]
+Finest:   Register the existing object entidades.Category[ id=18 ]
+Finest:   Register the existing object entidades.Category[ id=18 ]
+Finest:   Register the existing object entidades.Category[ id=19 ]
+Finest:   Register the existing object entidades.Category[ id=19 ]
+Finest:   Register the existing object entidades.Category[ id=19 ]
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1248015097
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1141223709
+Finest:   persist() operation called on: entidades.Customer[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.Customer[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CUSTOMER (ADDRESS, CC_NUMBER, CITY_REGION, EMAIL, NAME, PHONE) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [6 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (20 -> entidades.Customer[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 301689714
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 671620818
+Finer:   begin unit of work flush
+Finer:   end unit of work flush
+Finest:   Execute query ReadAllQuery(referenceClass=Customer )
+Finest:   Connection acquired from connection pool [read].
+Finest:   reconnecting to external connection pool
+Fine:   SELECT ID, ADDRESS, CC_NUMBER, CITY_REGION, EMAIL, NAME, PHONE FROM CUSTOMER
+Finest:   Connection released to connection pool [read].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1229162958
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 329567096
+Finest:   persist() operation called on: entidades.CustomerOrder[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Customer )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.CustomerOrder[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CUSTOMER_ORDER (AMOUNT, CONFIRMATION_NUMBER, DATE_CREATED, CUSTOMER_ID) VALUES (?, ?, ?, ?)
+	bind => [4 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (28 -> entidades.CustomerOrder[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 1579551546
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1746125335
+Finest:   persist() operation called on: entidades.CustomerOrder[ id=null ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=Customer )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.CustomerOrder[ id=null ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO CUSTOMER_ORDER (AMOUNT, CONFIRMATION_NUMBER, DATE_CREATED, CUSTOMER_ID) VALUES (?, ?, ?, ?)
+	bind => [4 parameters bound]
+Finest:   Execute query ValueReadQuery(name="SEQ_GEN_IDENTITY" sql="values IDENTITY_VAL_LOCAL()")
+Fine:   values IDENTITY_VAL_LOCAL()
+Finest:   assign sequence to the object (29 -> entidades.CustomerOrder[ id=null ])
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 625326395
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 514745587
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=28, productId=63 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=28, productId=63 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 2032110594
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1884372288
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=28, productId=64 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=28, productId=64 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 656275409
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1412431293
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=28, productId=65 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=28, productId=65 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 543593454
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 577338390
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=29, productId=63 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=29, productId=63 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 95801858
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 1445934281
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=29, productId=64 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=29, productId=64 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
+Finer:   client acquired: 411806589
+Finer:   TX binding to tx mgr, status=STATUS_ACTIVE
+Finer:   acquire unit of work: 769185507
+Finest:   persist() operation called on: entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=29, productId=65 ] ].
+Finer:   TX beforeCompletion callback, status=STATUS_ACTIVE
+Finer:   begin unit of work commit
+Finest:   Execute query DoesExistQuery(referenceClass=CustomerOrder )
+Finest:   Execute query DoesExistQuery(referenceClass=Product )
+Finer:   TX beginTransaction, status=STATUS_ACTIVE
+Finest:   Execute query InsertObjectQuery(entidades.OrderedProduct[ orderedProductPK=entidades.OrderedProductPK[ customerOrderId=29, productId=65 ] ])
+Finest:   Connection acquired from connection pool [default].
+Finest:   reconnecting to external connection pool
+Fine:   INSERT INTO ORDERED_PRODUCT (QUANTITY, PRODUCT_ID, CUSTOMER_ORDER_ID) VALUES (?, ?, ?)
+	bind => [3 parameters bound]
+Finest:   Connection released to connection pool [default].
+Finer:   TX afterCompletion callback, status=COMMITTED
+Finer:   end unit of work commit
+Finer:   release unit of work
+Finer:   client released
