@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<process
+    name="calculadora"
+    targetNamespace="http://enterprise.netbeans.org/bpel/Calculadora/calculadora"
+    xmlns:tns="http://enterprise.netbeans.org/bpel/Calculadora/calculadora"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+    xmlns:sxt="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Trace" 
+    xmlns:sxed="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Editor2"
+    xmlns:sxat="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Attachment"
+    xmlns:sxeh="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/ErrorHandling" xmlns:ns0="http://xml.netbeans.org/schema/CalculadoraSchema">
+    <import namespace="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" location="miCalculadora.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <partnerLinks>
+        <partnerLink name="PartnerLink1" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" partnerLinkType="tns:miCalculadora" myRole="miCalculadoraPortTypeRole"/>
+    </partnerLinks>
+    <variables>
+        <variable name="Fault1FaultVar" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationFault"/>
+        <variable name="DivisionOut" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationResponse"/>
+        <variable name="DivisionIn" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationRequest"/>
+        <variable name="MultiplicacionOut" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationResponse"/>
+        <variable name="RestaOut" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationResponse"/>
+        <variable name="SumaOut" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationResponse"/>
+        <variable name="MultiplicacionIn" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationRequest"/>
+        <variable name="RestaIn" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationRequest"/>
+        <variable name="SumaIn" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" messageType="tns:operationRequest"/>
+    </variables>
+    <sequence>
+        <pick name="Pick1" createInstance="yes">
+            <onMessage partnerLink="PartnerLink1" operation="suma" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" portType="tns:miCalculadoraPortType" variable="SumaIn">
+                <sequence name="Sequence1">
+                    <assign name="Assign1">
+                        <copy>
+                            <from>$SumaIn.part1/ns0:param01 + $SumaIn.part1/ns0:param02</from>
+                            <to>$SumaOut.part1/ns0:response01</to>
+                        </copy>
+                    </assign>
+                    <reply name="Reply1" partnerLink="PartnerLink1" operation="suma" portType="tns:miCalculadoraPortType" variable="SumaOut"/>
+                </sequence>
+            </onMessage>
+            <onMessage partnerLink="PartnerLink1" operation="resta" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" portType="tns:miCalculadoraPortType" variable="RestaIn">
+                <sequence name="Sequence2">
+                    <assign name="Assign2">
+                        <copy>
+                            <from>$RestaIn.part1/ns0:param01 - $RestaIn.part1/ns0:param02</from>
+                            <to>$RestaOut.part1/ns0:response01</to>
+                        </copy>
+                    </assign>
+                    <reply name="Reply2" partnerLink="PartnerLink1" operation="resta" portType="tns:miCalculadoraPortType" variable="RestaOut"/>
+                </sequence>
+            </onMessage>
+            <onMessage partnerLink="PartnerLink1" operation="multiplicacion" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" portType="tns:miCalculadoraPortType" variable="MultiplicacionIn">
+                <sequence name="Sequence3">
+                    <assign name="Assign3">
+                        <copy>
+                            <from>$MultiplicacionIn.part1/ns0:param01 * $MultiplicacionIn.part1/ns0:param02</from>
+                            <to>$MultiplicacionOut.part1/ns0:response01</to>
+                        </copy>
+                    </assign>
+                    <reply name="Reply3" partnerLink="PartnerLink1" operation="multiplicacion" portType="tns:miCalculadoraPortType" variable="MultiplicacionOut"/>
+                </sequence>
+            </onMessage>
+            <onMessage partnerLink="PartnerLink1" operation="division" xmlns:tns="http://j2ee.netbeans.org/wsdl/Calculadora/src/miCalculadora" portType="tns:miCalculadoraPortType" variable="DivisionIn">
+                <if name="If1">
+                    <condition>0 != $DivisionIn.part1/ns0:param02</condition>
+                    <sequence name="Sequence4">
+                        <assign name="Assign4">
+                            <copy>
+                                <from>$DivisionIn.part1/ns0:param01 div $DivisionIn.part1/ns0:param02</from>
+                                <to>$DivisionOut.part1/ns0:response01</to>
+                            </copy>
+                        </assign>
+                        <reply name="Reply4" partnerLink="PartnerLink1" operation="division" portType="tns:miCalculadoraPortType" variable="DivisionOut"/>
+                    </sequence>
+                    <else>
+                        <sequence name="Sequence5">
+                            <assign name="Assign5">
+                                <copy>
+                                    <from>'No puedes dividir entre 0'</from>
+                                    <to>$Fault1FaultVar.part1/ns0:newElement</to>
+                                </copy>
+                            </assign>
+                            <reply name="Reply5" partnerLink="PartnerLink1" operation="division" portType="tns:miCalculadoraPortType" faultName="tns:fault1" variable="Fault1FaultVar"/>
+                        </sequence>
+                    </else>
+                </if>
+            </onMessage>
+        </pick>
+    </sequence>
+</process>

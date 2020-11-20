@@ -1,0 +1,8 @@
+<soapenv:Envelope xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://xml.netbeans.org/schema/CalculadoraSchema">
+  <soapenv:Body>
+    <cal:myInput>
+      <cal:param01>17</cal:param01>
+      <cal:param02>20</cal:param02>
+    </cal:myInput>
+  </soapenv:Body>
+</soapenv:Envelope>
