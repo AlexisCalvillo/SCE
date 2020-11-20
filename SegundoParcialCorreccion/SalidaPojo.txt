@@ -1,0 +1,340 @@
+ant -f C:\\Users\\aalex\\Documents\\NetBeansProjects\\SCE\\SegundoParcialCorreccion\\Pojo_Parcial_02 -Djavac.includes=pojo_parcial_02/Pojo_Parcial_02.java -Dnb.internal.action.name=run.single -Drun.class=pojo_parcial_02.Pojo_Parcial_02 run-single
+init:
+Deleting: C:\Users\aalex\Documents\NetBeansProjects\SCE\SegundoParcialCorreccion\Pojo_Parcial_02\build\built-jar.properties
+deps-jar:
+Updating property file: C:\Users\aalex\Documents\NetBeansProjects\SCE\SegundoParcialCorreccion\Pojo_Parcial_02\build\built-jar.properties
+wsimport-init:
+wsimport-client-WSCat:
+files are up to date
+wsimport-client-WSCustomer:
+files are up to date
+wsimport-client-WSProd:
+files are up to date
+wsimport-client-wsPedidoHeader:
+files are up to date
+wsimport-client-WSPedidoItem:
+files are up to date
+wsimport-client-generate:
+Compiling 1 source file to C:\Users\aalex\Documents\NetBeansProjects\SCE\SegundoParcialCorreccion\Pojo_Parcial_02\build\classes
+compile-single:
+run-single:
+SCE: Segundo examen parcial de 159702 Arcadio Calvillo Madrid
+----------------------------------------------------
+          2020-11-12T11:54:49.411-06:00
+----------------------------------------------------
+Se ha dado de alta la categoría 17 ... Limpieza 159702
+Lista de Categorías:
+Categoría:1->dairy
+Categoría:2->meats
+Categoría:3->bakery
+Categoría:4->fruit & veg
+Categoría:5->Limpieza 159702
+Categoría:6->Limpieza 159702
+Categoría:7->Limpieza 159702
+Categoría:8->Limpieza 159702
+Categoría:9->Limpieza 159702
+Categoría:10->Limpieza 159702
+Categoría:11->Limpieza 159702
+Categoría:12->Limpieza 159702
+Categoría:13->Limpieza 159702
+Categoría:14->Limpieza 159702
+Categoría:15->Limpieza 159702
+Categoría:16->Limpieza 159702
+Categoría:17->Limpieza 159702
+Lista de Productos:
+Producto:1 milk semi skimmed (1L) cat:1 dairy
+Producto:2 cheese mild cheddar (330g) cat:1 dairy
+Producto:3 butter unsalted (250g) cat:1 dairy
+Producto:4 free range eggs medium-sized (6 eggs) cat:1 dairy
+Producto:5 organic meat patties rolled in fresh herbs patties (250g) cat:2 meats
+Producto:6 parma ham matured, organic (70g) cat:2 meats
+Producto:7 chicken leg free range (250g) cat:2 meats
+Producto:8 sausages reduced fat, pork 3 sausages (350g) cat:2 meats
+Producto:9 sunflower seed loaf 600g cat:3 bakery
+Producto:10 sesame seed bagel 4 bagels cat:3 bakery
+Producto:11 pumpkin seed bun 4 buns cat:3 bakery
+Producto:12 chocolate cookies contain peanuts (3 cookies) cat:3 bakery
+Producto:13 corn on the cob 2 pieces cat:4 fruit & veg
+Producto:14 red currants 150g cat:4 fruit & veg
+Producto:15 broccoli 500g cat:4 fruit & veg
+Producto:16 seedless watermelon 250g cat:4 fruit & veg
+Producto:17 Prod_Arcadio descripcion Arcadio cat:5 Limpieza 159702
+Producto:18 Prod_Calvillo descripcion Calvillo cat:5 Limpieza 159702
+Producto:19 Prod_Madrid descripcion Madrid cat:5 Limpieza 159702
+Producto:20 Prod_Arcadio descripcion Arcadio cat:6 Limpieza 159702
+Producto:21 Prod_Calvillo descripcion Calvillo cat:6 Limpieza 159702
+Producto:22 Prod_Madrid descripcion Madrid cat:6 Limpieza 159702
+Producto:23 Prod_Arcadio descripcion Arcadio cat:7 Limpieza 159702
+Producto:24 Prod_Calvillo descripcion Calvillo cat:7 Limpieza 159702
+Producto:25 Prod_Madrid descripcion Madrid cat:7 Limpieza 159702
+Producto:26 Prod_Arcadio descripcion Arcadio cat:8 Limpieza 159702
+Producto:27 Prod_Calvillo descripcion Calvillo cat:8 Limpieza 159702
+Producto:28 Prod_Madrid descripcion Madrid cat:8 Limpieza 159702
+Producto:29 Prod_Arcadio descripcion Arcadio cat:9 Limpieza 159702
+Producto:30 Prod_Calvillo descripcion Calvillo cat:9 Limpieza 159702
+Producto:31 Prod_Madrid descripcion Madrid cat:9 Limpieza 159702
+Producto:32 Prod_Arcadio descripcion Arcadio cat:10 Limpieza 159702
+Producto:33 Prod_Calvillo descripcion Calvillo cat:10 Limpieza 159702
+Producto:34 Prod_Madrid descripcion Madrid cat:10 Limpieza 159702
+Producto:35 Prod_Arcadio descripcion Arcadio cat:11 Limpieza 159702
+Producto:36 Prod_Calvillo descripcion Calvillo cat:11 Limpieza 159702
+Producto:37 Prod_Madrid descripcion Madrid cat:11 Limpieza 159702
+Producto:38 Prod_Arcadio descripcion Arcadio cat:12 Limpieza 159702
+Producto:39 Prod_Calvillo descripcion Calvillo cat:12 Limpieza 159702
+Producto:40 Prod_Madrid descripcion Madrid cat:12 Limpieza 159702
+Producto:41 Prod_Arcadio descripcion Arcadio cat:13 Limpieza 159702
+Producto:42 Prod_Calvillo descripcion Calvillo cat:13 Limpieza 159702
+Producto:43 Prod_Madrid descripcion Madrid cat:13 Limpieza 159702
+Producto:44 Prod_Arcadio descripcion Arcadio cat:14 Limpieza 159702
+Producto:45 Prod_Calvillo descripcion Calvillo cat:14 Limpieza 159702
+Producto:46 Prod_Madrid descripcion Madrid cat:14 Limpieza 159702
+Producto:47 Prod_Arcadio descripcion Arcadio cat:15 Limpieza 159702
+Producto:48 Prod_Calvillo descripcion Calvillo cat:15 Limpieza 159702
+Producto:49 Prod_Madrid descripcion Madrid cat:15 Limpieza 159702
+Producto:50 Prod_Arcadio descripcion Arcadio cat:16 Limpieza 159702
+Producto:51 Prod_Calvillo descripcion Calvillo cat:16 Limpieza 159702
+Producto:52 Prod_Madrid descripcion Madrid cat:16 Limpieza 159702
+Producto:53 Prod_Arcadio descripcion Arcadio cat:17 Limpieza 159702
+Producto:54 Prod_Calvillo descripcion Calvillo cat:17 Limpieza 159702
+Producto:55 Prod_Madrid descripcion Madrid cat:17 Limpieza 159702
+Se ha dado de alta el clte:13 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Lista de Clientes:
+Clte:1 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:2 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:3 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:4 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:5 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:6 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:7 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:8 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:9 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:10 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:11 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:12 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Clte:13 Arcadio Calvillo Madrid Rio Hondo 1 159702 MX 5556284000 acalvillm@itam.mx
+Lista de Encabezados de Pedidos:
+CustomerOrder: Id:1 Fecha:2020-11-12T11:46:11.371-06:00 Clte:1 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:2 Fecha:2020-11-12T11:46:11.371-06:00 Clte:1 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:3 Fecha:2020-11-12T11:46:20.884-06:00 Clte:2 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:4 Fecha:2020-11-12T11:46:20.884-06:00 Clte:2 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:5 Fecha:2020-11-12T11:47:19.979-06:00 Clte:3 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:6 Fecha:2020-11-12T11:47:19.979-06:00 Clte:3 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:7 Fecha:2020-11-12T11:51:29.825-06:00 Clte:4 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:8 Fecha:2020-11-12T11:51:29.825-06:00 Clte:4 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:9 Fecha:2020-11-12T11:53:28.617-06:00 Clte:5 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:10 Fecha:2020-11-12T11:53:28.617-06:00 Clte:5 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:11 Fecha:2020-11-12T11:53:44.369-06:00 Clte:6 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:12 Fecha:2020-11-12T11:53:44.369-06:00 Clte:6 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:13 Fecha:2020-11-12T11:53:48.771-06:00 Clte:7 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:14 Fecha:2020-11-12T11:53:48.771-06:00 Clte:7 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:15 Fecha:2020-11-12T11:53:54.474-06:00 Clte:8 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:16 Fecha:2020-11-12T11:53:54.474-06:00 Clte:8 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:17 Fecha:2020-11-12T11:54:00.753-06:00 Clte:9 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:18 Fecha:2020-11-12T11:54:00.753-06:00 Clte:9 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:19 Fecha:2020-11-12T11:54:06.456-06:00 Clte:10 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:20 Fecha:2020-11-12T11:54:06.456-06:00 Clte:10 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:21 Fecha:2020-11-12T11:54:38.040-06:00 Clte:11 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:22 Fecha:2020-11-12T11:54:38.040-06:00 Clte:11 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:23 Fecha:2020-11-12T11:54:43.670-06:00 Clte:12 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:24 Fecha:2020-11-12T11:54:43.670-06:00 Clte:12 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+CustomerOrder: Id:25 Fecha:2020-11-12T11:54:49.411-06:00 Clte:13 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+CustomerOrder: Id:26 Fecha:2020-11-12T11:54:49.411-06:00 Clte:13 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Lista de Items de Pedidos:
+CustomerOrder: No.Pedido:1 Producto:17 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:1 Producto:18 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:1 Producto:19 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:2 Producto:17 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:2 Producto:18 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:2 Producto:19 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:3 Producto:20 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:3 Producto:21 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:3 Producto:22 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:4 Producto:20 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:4 Producto:21 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:4 Producto:22 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:5 Producto:23 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:5 Producto:24 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:5 Producto:25 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:6 Producto:23 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:6 Producto:24 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:6 Producto:25 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:7 Producto:26 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:7 Producto:27 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:7 Producto:28 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:8 Producto:26 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:8 Producto:27 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:8 Producto:28 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:9 Producto:29 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:9 Producto:30 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:9 Producto:31 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:10 Producto:29 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:10 Producto:30 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:10 Producto:31 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:11 Producto:32 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:11 Producto:33 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:11 Producto:34 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:12 Producto:32 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:12 Producto:33 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:12 Producto:34 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:13 Producto:35 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:13 Producto:36 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:13 Producto:37 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:14 Producto:35 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:14 Producto:36 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:14 Producto:37 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:15 Producto:38 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:15 Producto:39 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:15 Producto:40 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:16 Producto:38 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:16 Producto:39 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:16 Producto:40 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:17 Producto:41 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:17 Producto:42 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:17 Producto:43 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:18 Producto:41 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:18 Producto:42 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:18 Producto:43 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:19 Producto:44 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:19 Producto:45 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:19 Producto:46 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:20 Producto:44 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:20 Producto:45 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:20 Producto:46 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:21 Producto:47 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:21 Producto:48 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:21 Producto:49 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:22 Producto:47 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:22 Producto:48 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:22 Producto:49 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:23 Producto:50 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:23 Producto:51 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:23 Producto:52 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:24 Producto:50 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:24 Producto:51 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:24 Producto:52 Prod_Madrid Cantidad:10
+CustomerOrder: No.Pedido:25 Producto:53 Prod_Arcadio Cantidad:5
+CustomerOrder: No.Pedido:25 Producto:54 Prod_Calvillo Cantidad:5
+CustomerOrder: No.Pedido:25 Producto:55 Prod_Madrid Cantidad:5
+CustomerOrder: No.Pedido:26 Producto:53 Prod_Arcadio Cantidad:10
+CustomerOrder: No.Pedido:26 Producto:54 Prod_Calvillo Cantidad:10
+CustomerOrder: No.Pedido:26 Producto:55 Prod_Madrid Cantidad:10
+Lista de Encabezados de Pedidos:
+CustomerOrder: Id:1 Fecha:2020-11-12T11:46:11.371-06:00 Clte:1 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 17 Cantidad: 5
+Item: Prod_Calvillo id: 18 Cantidad: 5
+Item: Prod_Madrid id: 19 Cantidad: 5
+CustomerOrder: Id:2 Fecha:2020-11-12T11:46:11.371-06:00 Clte:1 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 17 Cantidad: 10
+Item: Prod_Calvillo id: 18 Cantidad: 10
+Item: Prod_Madrid id: 19 Cantidad: 10
+CustomerOrder: Id:3 Fecha:2020-11-12T11:46:20.884-06:00 Clte:2 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 20 Cantidad: 5
+Item: Prod_Calvillo id: 21 Cantidad: 5
+Item: Prod_Madrid id: 22 Cantidad: 5
+CustomerOrder: Id:4 Fecha:2020-11-12T11:46:20.884-06:00 Clte:2 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 20 Cantidad: 10
+Item: Prod_Calvillo id: 21 Cantidad: 10
+Item: Prod_Madrid id: 22 Cantidad: 10
+CustomerOrder: Id:5 Fecha:2020-11-12T11:47:19.979-06:00 Clte:3 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 23 Cantidad: 5
+Item: Prod_Calvillo id: 24 Cantidad: 5
+Item: Prod_Madrid id: 25 Cantidad: 5
+CustomerOrder: Id:6 Fecha:2020-11-12T11:47:19.979-06:00 Clte:3 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 23 Cantidad: 10
+Item: Prod_Calvillo id: 24 Cantidad: 10
+Item: Prod_Madrid id: 25 Cantidad: 10
+CustomerOrder: Id:7 Fecha:2020-11-12T11:51:29.825-06:00 Clte:4 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 26 Cantidad: 5
+Item: Prod_Calvillo id: 27 Cantidad: 5
+Item: Prod_Madrid id: 28 Cantidad: 5
+CustomerOrder: Id:8 Fecha:2020-11-12T11:51:29.825-06:00 Clte:4 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 26 Cantidad: 10
+Item: Prod_Calvillo id: 27 Cantidad: 10
+Item: Prod_Madrid id: 28 Cantidad: 10
+CustomerOrder: Id:9 Fecha:2020-11-12T11:53:28.617-06:00 Clte:5 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 29 Cantidad: 5
+Item: Prod_Calvillo id: 30 Cantidad: 5
+Item: Prod_Madrid id: 31 Cantidad: 5
+CustomerOrder: Id:10 Fecha:2020-11-12T11:53:28.617-06:00 Clte:5 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 29 Cantidad: 10
+Item: Prod_Calvillo id: 30 Cantidad: 10
+Item: Prod_Madrid id: 31 Cantidad: 10
+CustomerOrder: Id:11 Fecha:2020-11-12T11:53:44.369-06:00 Clte:6 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 32 Cantidad: 5
+Item: Prod_Calvillo id: 33 Cantidad: 5
+Item: Prod_Madrid id: 34 Cantidad: 5
+CustomerOrder: Id:12 Fecha:2020-11-12T11:53:44.369-06:00 Clte:6 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 32 Cantidad: 10
+Item: Prod_Calvillo id: 33 Cantidad: 10
+Item: Prod_Madrid id: 34 Cantidad: 10
+CustomerOrder: Id:13 Fecha:2020-11-12T11:53:48.771-06:00 Clte:7 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 35 Cantidad: 5
+Item: Prod_Calvillo id: 36 Cantidad: 5
+Item: Prod_Madrid id: 37 Cantidad: 5
+CustomerOrder: Id:14 Fecha:2020-11-12T11:53:48.771-06:00 Clte:7 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 35 Cantidad: 10
+Item: Prod_Calvillo id: 36 Cantidad: 10
+Item: Prod_Madrid id: 37 Cantidad: 10
+CustomerOrder: Id:15 Fecha:2020-11-12T11:53:54.474-06:00 Clte:8 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 38 Cantidad: 5
+Item: Prod_Calvillo id: 39 Cantidad: 5
+Item: Prod_Madrid id: 40 Cantidad: 5
+CustomerOrder: Id:16 Fecha:2020-11-12T11:53:54.474-06:00 Clte:8 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 38 Cantidad: 10
+Item: Prod_Calvillo id: 39 Cantidad: 10
+Item: Prod_Madrid id: 40 Cantidad: 10
+CustomerOrder: Id:17 Fecha:2020-11-12T11:54:00.753-06:00 Clte:9 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 41 Cantidad: 5
+Item: Prod_Calvillo id: 42 Cantidad: 5
+Item: Prod_Madrid id: 43 Cantidad: 5
+CustomerOrder: Id:18 Fecha:2020-11-12T11:54:00.753-06:00 Clte:9 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 41 Cantidad: 10
+Item: Prod_Calvillo id: 42 Cantidad: 10
+Item: Prod_Madrid id: 43 Cantidad: 10
+CustomerOrder: Id:19 Fecha:2020-11-12T11:54:06.456-06:00 Clte:10 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 44 Cantidad: 5
+Item: Prod_Calvillo id: 45 Cantidad: 5
+Item: Prod_Madrid id: 46 Cantidad: 5
+CustomerOrder: Id:20 Fecha:2020-11-12T11:54:06.456-06:00 Clte:10 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 44 Cantidad: 10
+Item: Prod_Calvillo id: 45 Cantidad: 10
+Item: Prod_Madrid id: 46 Cantidad: 10
+CustomerOrder: Id:21 Fecha:2020-11-12T11:54:38.040-06:00 Clte:11 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 47 Cantidad: 5
+Item: Prod_Calvillo id: 48 Cantidad: 5
+Item: Prod_Madrid id: 49 Cantidad: 5
+CustomerOrder: Id:22 Fecha:2020-11-12T11:54:38.040-06:00 Clte:11 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 47 Cantidad: 10
+Item: Prod_Calvillo id: 48 Cantidad: 10
+Item: Prod_Madrid id: 49 Cantidad: 10
+CustomerOrder: Id:23 Fecha:2020-11-12T11:54:43.670-06:00 Clte:12 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 50 Cantidad: 5
+Item: Prod_Calvillo id: 51 Cantidad: 5
+Item: Prod_Madrid id: 52 Cantidad: 5
+CustomerOrder: Id:24 Fecha:2020-11-12T11:54:43.670-06:00 Clte:12 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 50 Cantidad: 10
+Item: Prod_Calvillo id: 51 Cantidad: 10
+Item: Prod_Madrid id: 52 Cantidad: 10
+CustomerOrder: Id:25 Fecha:2020-11-12T11:54:49.411-06:00 Clte:13 Arcadio Calvillo Madrid Num. conf:1 Monto:90
+Item: Prod_Arcadio id: 53 Cantidad: 5
+Item: Prod_Calvillo id: 54 Cantidad: 5
+Item: Prod_Madrid id: 55 Cantidad: 5
+CustomerOrder: Id:26 Fecha:2020-11-12T11:54:49.411-06:00 Clte:13 Arcadio Calvillo Madrid Num. conf:2 Monto:180
+Item: Prod_Arcadio id: 53 Cantidad: 10
+Item: Prod_Calvillo id: 54 Cantidad: 10
+Item: Prod_Madrid id: 55 Cantidad: 10
+El total de los pedidos es: 3510.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 1 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 2 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 3 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 4 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 5 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 6 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 7 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 8 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 9 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 10 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 11 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 12 Total: 270.0
+Total por Cliente: Arcadio Calvillo Madrid Id del cliente: 13 Total: 270.0
+BUILD SUCCESSFUL (total time: 4 seconds)
